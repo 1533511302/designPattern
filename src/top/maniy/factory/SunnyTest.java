@@ -18,6 +18,13 @@ public class SunnyTest {
 
         ShoesInterface red3 =factory.getShoesByClass("top.maniy.factory.RedShoes");
         red3.draw();
+
+        //使用年轻加工厂
+        PersonFactory factory2= new YouthFactory();
+        //生产年轻的女孩类
+        Girl girl =factory2.getGirl();
+        //调用类方法
+        girl.drawWomen();
     }
 
 
