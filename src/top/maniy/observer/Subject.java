@@ -32,9 +32,11 @@ public class Subject {
     /**
      * 通知所有注册的观察者对象
      */
+    //  public void notifyObservers(String content){
     public void notifyObservers(){
         for(Observer observer:observers){
             observer.update(this);
+            //observer.update(content);
         }
     }
 }

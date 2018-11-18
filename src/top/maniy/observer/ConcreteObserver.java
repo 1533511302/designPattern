@@ -35,11 +35,13 @@ public class ConcreteObserver implements Observer {
 
     /**
      * 获取目标类的状态同步到观察者的状态中
+     * 拉模型 观察者主动到目标对象中获取数据，一般这种模型的实现中，会把目标对象自身对象自身通过update方法传递给观察者
      * @param subject 传入目标对象，方便获取相应的目标对象的状态
      */
     @Override
+    // public void update(String content) {
     public void update(Subject subject) {
-
+        //observerState=content;
         observerState =((ConcreteSubject)subject).getSubjectState();
         System.out.println(observerName+"收到了:"+observerState+",处理方式"+observerHandle);
     }

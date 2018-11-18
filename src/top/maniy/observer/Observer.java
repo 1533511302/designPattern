@@ -12,4 +12,6 @@ public interface Observer {
      * @param subject 传入目标对象，方便获取相应的目标对象的状态
      */
     public void update(Subject subject);
+    //推模型 主动把某一数据推送给观察者
+    //public void update(String Content);
 }

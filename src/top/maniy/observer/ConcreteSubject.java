@@ -14,10 +14,11 @@ public class ConcreteSubject extends Subject{
     public String getSubjectState() {
         return subjectState;
     }
-
+    //public void setSubjectState(String content){
     public void setSubjectState(String subjectState) {
         this.subjectState = subjectState;
         //状态设置了 使用父类通知观察者
         this.notifyObservers();
+        //this.notifyObservers(content);
     }
 }
