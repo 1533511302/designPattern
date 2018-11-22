@@ -9,7 +9,7 @@ import java.lang.reflect.Method;
  * @Description:
  * @date 2018/11/17 22:08
  */
-public class TimeHandler implements InvocationHandler {
+public class  TimeHandler implements InvocationHandler {
 
     public TimeHandler(Object target){
         super();

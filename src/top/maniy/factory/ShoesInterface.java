@@ -7,7 +7,6 @@ package top.maniy.factory;
  * @date 2018/11/16 16:33
  */
 public interface ShoesInterface {
-
     //实现了鞋子
     public void draw();
 }

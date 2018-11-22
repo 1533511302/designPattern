@@ -21,7 +21,6 @@ public abstract class Games {
         if(isNeedSing()){
             sing();
         }
-      
 
         //比赛
         game();
@@ -58,7 +57,7 @@ public abstract class Games {
     protected abstract void sing();
 
     /**
-     * 基本方法 开模式
+     * 基本方法 开幕式
      */
     private void opening() {
         System.out.println("运动会开幕式");
